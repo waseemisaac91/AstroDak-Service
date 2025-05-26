@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AstroDak Service</title>
-    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -18,8 +18,7 @@
           <a href="#home" class="logo-container">
             <img src="logo.jpg" alt="AstroDak Logo" class="logo" />
             <div class="logo-text">
-              <span class="main">ASTRODAK</span>
-              <span class="sub">D A K B E D R I J F</span>
+              <span class="main">AstroDak Services</span>
             </div>
           </a>
 
@@ -33,9 +32,13 @@
             </ul>
 
             <div class="header-cta">
-              <a href="tel:+31684762946" class="phone-link">
-                <i class="fas fa-phone"></i>
-                +31 6-84762946
+              <a
+                href="https://wa.me/31684762946"
+                class="whatsapp-btn"
+                target="_blank"
+              >
+                <i class="fab fa-whatsapp"></i>
+                +31684762946
               </a>
               <a href="#contact" class="cta-button">Offerte Aanvragen</a>
             </div>
@@ -59,11 +62,16 @@
           <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
         </ul>
 
-        <a href="tel:+31684762946" class="mobile-phone">
-          <i class="fas fa-phone"></i>
-          +31 6-84762946
-        </a>
-
+        <div class="mobile-contact-options">
+          <a
+            href="https://wa.me/31684762946"
+            class="whatsapp-btn"
+            target="_blank"
+          >
+            <i class="fab fa-whatsapp"></i>
+            +31684762946
+          </a>
+        </div>
         <a href="#contact" class="mobile-cta">Gratis Offerte</a>
       </div>
 
@@ -88,28 +96,26 @@
         <div class="services-grid">
           <div class="service-card">
             <i class="fas fa-home"></i>
-            <h3>Dakisolatie</h3>
-            <p>
-              Hoogwaardige thermische en akoestische isolatieoplossingen voor
-              daken
-            </p>
+            <h3>Dakisolatie platdaken</h3>
+            <p>Bitumen - lichtkoepel</p>
           </div>
           <div class="service-card">
             <i class="fas fa-tools"></i>
             <h3>Zink Werk</h3>
-            <p>Installatie en reparatie van Zink Werk en goten</p>
+            <p>Dakgoten -Dakgoot Reiniging - kilgoot</p>
           </div>
           <div class="service-card">
             <i class="fas fa-arrow-up"></i>
             <h3>Hellede Daken</h3>
             <p>
-              Ontwerp en installatie van verschillende soorten hellende daken
+              Dakpannen - DakIsolatie - DakRaam -Nokvorst - Plastisol -Trespa -
+              Boeiboord
             </p>
           </div>
           <div class="service-card">
             <i class="fas fa-square"></i>
-            <h3>Platte Daken</h3>
-            <p>Complete oplossingen voor platte daken en isolatie</p>
+            <h3>Schoorsteen Reparatie</h3>
+            <p>Lood Vervangen - Voegen - Coating -Impregneren</p>
           </div>
         </div>
       </div>
@@ -118,9 +124,10 @@
     <!-- About Section -->
     <section class="about" id="about">
       <div class="container">
+        <h2 class="section-title">Over Ons</h2>
+        <!-- إضافة العنوان بنفس تنسيق الأقسام الأخرى -->
         <div class="about-content">
           <div class="about-text">
-            <h2>Over Ons</h2>
             <p>
               AstroDak Service is gespecialiseerd in dakisolatie en zink Werk
               voor hellende en platte daken. Ons bedrijf is opgericht met de
@@ -140,7 +147,8 @@
             </p>
           </div>
           <div class="about-image">
-            <img src="about.jpeg" alt="About US " />
+            <img src="img/Dakpannen3.jpg" alt="Over AstroDak" />
+            <!-- تحسين النص البديل -->
           </div>
         </div>
       </div>
@@ -150,35 +158,35 @@
     <section class="projects" id="projects">
       <div class="container">
         <h2 class="section-title">Onze Projecten</h2>
+
+        <!-- Filter Dropdown -->
+        <div
+          class="project-filter"
+          style="margin-bottom: 2rem; text-align: center"
+        >
+          <select
+            id="projectFilter"
+            style="
+              padding: 0.8rem 1.5rem;
+              border-radius: 5px;
+              border: 2px solid var(--secondary);
+              background-color: white;
+              color: var(--primary);
+              font-weight: 700;
+              cursor: pointer;
+              outline: none;
+            "
+          >
+            <option value="all">Alle Projecten</option>
+            <option value="dakisolatie">Dakisolatie platdaken</option>
+            <option value="zinkwerk">Zink Werk</option>
+            <option value="hellededaken">Hellede Daken</option>
+            <option value="schoorsteen">Schoorsteen Reparatie</option>
+          </select>
+        </div>
+
         <div class="projects-grid">
-          <div class="project-card">
-            <img src="Dakisolatie.jpeg" alt="Dakisolatieproject" />
-            <div class="project-overlay">
-              <h3>Dakisolatie Villa</h3>
-              <p>Thermische en akoestische isolatie voor een dak van 200 m²</p>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="Schoorstenen renovatei.jpg" alt="Zinken dakproject" />
-            <div class="project-overlay">
-              <h3>Schoorstenen Renovatei</h3>
-              <p>Installatie van Schoorstenen Renovatei</p>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="Hellenddak.jpeg" alt="Helledak project" />
-            <div class="project-overlay">
-              <h3>Helledak Landhuis</h3>
-              <p>Ontwerp en installatie van hellend dak voor een landhuis</p>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="Platdak.jpg" alt="Plat dak project" />
-            <div class="project-overlay">
-              <h3>Plat Dak Isolatie</h3>
-              <p>Isolatie van plat dak voor een commercieel gebouw</p>
-            </div>
-          </div>
+          <!-- Projects will be dynamically inserted here by JavaScript -->
         </div>
       </div>
     </section>
@@ -189,19 +197,7 @@
       style="background-color: white; padding: 40px 20px"
     >
       <div class="container">
-        <h2
-          class="section-title"
-          style="
-            text-align: center;
-            margin-bottom: 2rem;
-            font-size: 2rem;
-            color: var(--dark);
-            position: relative;
-            display: inline-block;
-          "
-        >
-          Hoe gaan Wij Te Werk Gaan
-        </h2>
+        <h2 class="section-why-title">Hoe gaan Wij Te Werk</h2>
         <div
           class="process-steps"
           style="
@@ -378,7 +374,7 @@
       style="background-color: var(--light); padding: 5rem 0"
     >
       <div class="container">
-        <h2 class="section-title">Waarom AstroDak?</h2>
+        <h2 class="section-title">Waarom AstroDak Service?</h2>
         <div
           class="why-us-content"
           style="display: flex; gap: 3rem; align-items: center"
@@ -535,6 +531,29 @@
       </div>
     </section>
 
+    <!-- Reviews Section -->
+    <section
+      class="reviews"
+      id="reviews"
+      style="background-color: var(--light); padding: 5rem 0"
+    >
+      <div class="container">
+        <h2 class="section-title">Wat Onze Klanten Zeggen</h2>
+        <p
+          class="section-subtitle"
+          style="text-align: center; margin-bottom: 3rem; color: var(--dark)"
+        >
+          Lees ervaringen van tevreden klanten die onze diensten hebben gebruikt
+        </p>
+
+        <div class="reviews-container">
+          <!-- Review cards will be dynamically inserted here by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Review Modal -->
+
     <!-- Contact Section -->
     <section class="contact" id="contact">
       <div class="container">
@@ -557,10 +576,15 @@
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
-            <p><i class="fas fa-phone"></i> Telefoon: 06 84762946</p>
             <p>
-              <i class="fas fa-envelope"></i> E-mail:
-              info.astrodakservice@gmail.com
+              <i class="fas fa-phone"></i> Telefoon:
+              <a href="tel:+31684762946">+31 6-84762946</a>
+            </p>
+            <p>
+              <i class="fas fa-envelope"></i> E-mail:<a
+                href="mailto:info.astrodak@gmail.com"
+                >info.astrodak@gmail.com</a
+              >
             </p>
             <p>
               <i class="fas fa-clock"></i> Openingstijden: Maandag t/m Vrijdag,
@@ -597,15 +621,14 @@
       </div>
     </section>
 
-    <!-- Footer -->
     <footer>
       <div class="container">
         <div class="footer-content">
+          <!-- Company Info Column -->
           <div class="footer-column">
-            <a href="#home" class="logo-container" style="margin: 1.5rem">
+            <a href="#home" class="logo-container">
               <div class="logo-text">
-                ASTRODAK
-                <span>D A K B E D R I J F</span>
+                <span class="logo-text-footer">AstroDak Services</span>
               </div>
             </a>
             <p>
@@ -614,13 +637,64 @@
               dakbehoeften.
             </p>
             <div class="social-links">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61576362463269&rdid=joAb4jJ9h9fWOQBj&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F19W5P3RXqp%2F"
+                target="_blank"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/astrodakservice/?igsh=MTgxMDZjOGRjNTM4dA%3D%3D"
+                target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.tiktok.com/@astrodak.service?_t=ZG-8wfsyyzPnaS&_r=1"
+                ><i class="fab fa-tiktok"></i
+              ></a>
             </div>
           </div>
 
+          <!-- Service Area Column -->
+          <div class="footer-column">
+            <h3>Onze Werkgebied</h3>
+            <div class="location-grid">
+              <div class="location-item">
+                <i class="fas fa-map-marker-alt location-icon"></i>
+                <span>Breda</span>
+              </div>
+              <div class="location-item">
+                <i class="fas fa-map-marker-alt location-icon"></i>
+                <span>'s-Hertogenbosch</span>
+              </div>
+              <div class="location-item">
+                <i class="fas fa-map-marker-alt location-icon"></i>
+                <span>Eindhoven</span>
+              </div>
+              <div class="location-item">
+                <i class="fas fa-map-marker-alt location-icon"></i>
+                <span>Nijmegen</span>
+              </div>
+              <div class="location-item">
+                <i class="fas fa-map-marker-alt location-icon"></i>
+                <span>Oss</span>
+              </div>
+              <div class="location-item">
+                <i class="fas fa-map-marker-alt location-icon"></i>
+                <span>Dordrecht</span>
+              </div>
+              <div class="location-item">
+                <i class="fas fa-map-marker-alt location-icon"></i>
+                <span>Tilburg</span>
+              </div>
+              <div class="location-item">
+                <i class="fas fa-map-marker-alt location-icon"></i>
+                <span>Utrecht</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Links Column -->
           <div class="footer-column">
             <h3>Snelle Links</h3>
             <a href="#home"><i class="fas fa-chevron-right"></i> Home</a>
@@ -634,22 +708,7 @@
             <a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a>
           </div>
 
-          <div class="footer-column">
-            <h3>Onze Diensten</h3>
-            <a href="#services"
-              ><i class="fas fa-chevron-right"></i> Dakisolatie</a
-            >
-            <a href="#services"
-              ><i class="fas fa-chevron-right"></i> Zink Werk</a
-            >
-            <a href="#services"
-              ><i class="fas fa-chevron-right"></i> Hellede Daken</a
-            >
-            <a href="#services"
-              ><i class="fas fa-chevron-right"></i> Platte Daken</a
-            >
-          </div>
-
+          <!-- Contact Info Column -->
           <div class="footer-column">
             <h3>Contactgegevens</h3>
             <p>
@@ -657,10 +716,33 @@
               Nederland
             </p>
             <p><i class="fas fa-phone"></i> +31 06-84762946</p>
-            <p>
-              <i class="fas fa-envelope"></i> info.astrodakservice@gmail.com
-            </p>
+            <p><i class="fas fa-envelope"></i> info.astrodak@gmail.com</p>
             <p><i class="fas fa-clock"></i> Ma-Vrij: 8:00 - 17:00</p>
+          </div>
+        </div>
+        <!-- Certifications Column -->
+        <div class="footer-certifications-fullwidth">
+          <div class="certifications-container">
+            <img
+              src="gecertificeerde-dakdekker2.png"
+              alt="Gecertificeerd Dakdekker"
+              class="certification-logo"
+            />
+            <img
+              src="VCA.jpeg"
+              alt="VCA Gecertificeerd"
+              class="certification-logo"
+            />
+            <img
+              src="google-reviews.png"
+              alt="Google Reviews"
+              class="certification-logo"
+            />
+            <img
+              src="pinnen-ja-graag.png"
+              alt="PINNEN JA GRAAG"
+              class="certification-logo"
+            />
           </div>
         </div>
 
@@ -670,145 +752,24 @@
             voorbehouden.
           </p>
           <p style="margin-top: 0.5rem">
-            KVK-nummer: [XXXXXX] | BTW-nummer: [XXXXXX]
+            KVK-nummer : 93370652 | BTW-nummer : NL005017295B52
           </p>
         </div>
       </div>
+
+      <!-- WhatsApp Floating Button -->
+      <div class="whatsapp-float" id="whatsappFloat">
+        <a
+          href="https://wa.me/31684762946"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-whatsapp"></i>
+          <span class="whatsapp-tooltip">Stuur ons een bericht</span>
+        </a>
+      </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <script>
-      // DOM Elements
-      const header = document.getElementById("mainHeader");
-      const hamburger = document.getElementById("hamburger");
-      const mobileMenu = document.getElementById("mobileMenu");
-      const overlay = document.getElementById("overlay");
-      const navLinks = document.querySelectorAll(".nav-link, .mobile-nav-link");
-      const yearSpan = document.getElementById("year");
-      const contactForm = document.getElementById("contactForm");
-
-      // Set current year in footer
-      if (yearSpan) {
-        yearSpan.textContent = new Date().getFullYear();
-      }
-
-      // Header scroll effect
-      window.addEventListener("scroll", () => {
-        if (window.scrollY > 50) {
-          header.classList.add("scrolled");
-        } else {
-          header.classList.remove("scrolled");
-        }
-
-        // Highlight active section
-        let current = "";
-        document.querySelectorAll("section").forEach((section) => {
-          const sectionTop = section.offsetTop;
-          const sectionHeight = section.clientHeight;
-
-          if (pageYOffset >= sectionTop - 100) {
-            current = section.getAttribute("id");
-          }
-        });
-
-        navLinks.forEach((link) => {
-          link.classList.remove("active");
-          if (link.getAttribute("href") === `#${current}`) {
-            link.classList.add("active");
-          }
-        });
-      });
-
-      // Mobile menu toggle
-      hamburger.addEventListener("click", () => {
-        hamburger.classList.toggle("active");
-        mobileMenu.classList.toggle("active");
-        overlay.classList.toggle("active");
-
-        // Toggle hamburger to X
-        if (hamburger.classList.contains("active")) {
-          hamburger.children[0].style.transform =
-            "rotate(45deg) translate(5px, 6px)";
-          hamburger.children[1].style.opacity = "0";
-          hamburger.children[2].style.transform =
-            "rotate(-45deg) translate(5px, -6px)";
-        } else {
-          hamburger.children[0].style.transform = "none";
-          hamburger.children[1].style.opacity = "1";
-          hamburger.children[2].style.transform = "none";
-        }
-      });
-
-      // Update your existing JavaScript with this:
-
-      // Mobile menu close when clicking any link
-      document
-        .querySelectorAll(".mobile-nav-link, .mobile-cta")
-        .forEach((link) => {
-          link.addEventListener("click", () => {
-            hamburger.classList.remove("active");
-            mobileMenu.classList.remove("active");
-            overlay.classList.remove("active");
-            hamburger.children[0].style.transform = "none";
-            hamburger.children[1].style.opacity = "1";
-            hamburger.children[2].style.transform = "none";
-          });
-        });
-
-      // Smooth scrolling for all links including mobile CTA
-      document
-        .querySelectorAll(".nav-link, .mobile-nav-link, .mobile-cta, .btn")
-        .forEach((link) => {
-          link.addEventListener("click", (e) => {
-            const href = link.getAttribute("href");
-            if (href.startsWith("#")) {
-              e.preventDefault();
-
-              // Get target section
-              const targetId = href;
-              const targetSection = document.querySelector(targetId);
-
-              // Scroll to target
-              targetSection.scrollIntoView({
-                behavior: "smooth",
-              });
-
-              // Close mobile menu if open
-              if (mobileMenu.classList.contains("active")) {
-                hamburger.classList.remove("active");
-                mobileMenu.classList.remove("active");
-                overlay.classList.remove("active");
-                hamburger.children[0].style.transform = "none";
-                hamburger.children[1].style.opacity = "1";
-                hamburger.children[2].style.transform = "none";
-              }
-            }
-          });
-        });
-
-      // Form submission
-      (function () {
-        emailjs.init("AqhrHKUKmy5-ZUk5u"); // Replace "YOUR_USER_ID" with your actual EmailJS User ID
-      })();
-      document
-        .getElementById("contactForm")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-          const form = e.target; // ⭐ أفضل من استخدام this
-
-          emailjs
-            .sendForm(
-              "service_sckkimu", // Your EmailJS Service ID
-              "template_4l9fb46", // Your EmailJS Template ID
-              form // The HTML form element
-            )
-            .then(() => {
-              alert("Bericht succesvol verzonden!");
-              form.reset(); // Reset the form using the 'form' variable
-            })
-            .catch((err) => {
-              alert("Fout in Verzonden!" + err);
-            });
-        });
-    </script>
+    <script type="text/JavaScript" src="script.js"></script>
   </body>
 </html>
